@@ -1,11 +1,10 @@
 import React from 'react'
+import AppShell from './AppShell';
 
 function App() {
     return (
         <div>
-            ddd
-            이상한데
-
+            <AppShell />
         </div>
     )
 }
