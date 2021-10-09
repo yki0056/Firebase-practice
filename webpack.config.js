@@ -7,6 +7,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, './build'),
         filename: '[name].js',
+        publicPath: '/'
     },
     module: {
         rules: [{
@@ -21,6 +22,7 @@ module.exports = {
             directory: path.join(__dirname, './public'),
         },
         host: 'localhost',
-        port: 8080
+        port: 8080,
+        historyApiFallback: true,
     }
 }
